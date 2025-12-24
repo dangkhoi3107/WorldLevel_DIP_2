@@ -1,11 +1,22 @@
-opencv-python>=4.8.0
-mediapipe>=0.10.0
-numpy>=1.24.0
-tqdm>=4.65.0
-tensorflow>=2.15.0
-scikit-learn>=1.3.0
-tensorflowjs>=4.15.0
-tensorflow>=2.15.0
-tensorflowjs>=4.15.0
-scikit-learn>=1.3.0
+# --- Core AI & Deep Learning ---
+torch>=2.0.0
+torchvision
+numpy
 
+# --- Computer Vision & Image Processing ---
+opencv-python
+mediapipe>=0.10.0
+
+# --- Data Analysis & Visualization (cho evaluate.ipynb) ---
+scikit-learn
+matplotlib
+seaborn
+pandas
+
+# --- Model Export & Runtime (cho ONNX) ---
+onnx
+onnxruntime
+
+# --- Jupyter Notebook Support ---
+ipykernel
+notebook

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Hand Gesture Data Collector</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./data-collector.css" />
+</head>
+
+<body>
+  <main id="app">
+    <div id="video-container">
+      <video id="webcam" autoplay playsinline></video>
+      <canvas id="overlay-canvas"></canvas>
+      <div id="controls">
+        <h2>Gesture Data Collector</h2>
+        <div id="instructions">
+          <p><strong>Controls (Sequence / Video-like):</strong></p>
+          <ul>
+            <li><kbd>[</kbd> / <kbd>]</kbd> - Previous / Next class</li>
+            <li><kbd>R</kbd> (hold) - Record a clip for the current class</li>
+            <li><kbd>Space</kbd> - Pause/Resume recording</li>
+            <li><kbd>E</kbd> - Export data (download JSON)</li>
+            <li><kbd>C</kbd> - Clear all collected data</li>
+          </ul>
+          <p style="margin-top: 10px; font-size: 12px; color: #aaa;">
+            💡 Tip: Hold <kbd>R</kbd> for ~2–3 seconds per clip. Record 20–50 clips/class for a good start.
+          </p>
+        </div>
+
+        <div id="label-picker" style="margin: 10px 0;">
+          <label for="label-select"><strong>Current class:</strong></label>
+          <select id="label-select"></select>
+        </div>
+
+        <div id="stats">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    `
+          <div class="stat total">
+            <span class="label">Total clips:</span>
+            <span id="count-total" class="count">0</span>
+          </div>
+
+          <div id="class-counts"></div>
+        </div>
+
+        <div id="status">
+          <span id="status-text">Ready - Press 1-4 to start collecting</span>
+        </div>
+        <div id="current-label" class="hidden">
+          Recording: <span id="current-label-name"></span>
+        </div>
+      </div>
+      <div id="error-overlay" hidden></div>
+    </div>
+  </main>
+  <!-- MediaPipe Hands CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+  <script src="./data-collector.js"></script>
+</body>
+
+</html>

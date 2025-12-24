@@ -1,0 +1,72 @@
+# ==========================
+# 1. Python & Virtual Env
+# ==========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+.env
+
+# ==========================
+# 2. OS & IDE
+# ==========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================
+# 3. Data & Media (Heavy Files)
+# ==========================
+# Video files (Input data)
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Raw Datasets (Numpy arrays)
+*.npy
+*.npz
+
+# Folders containing raw data
+data/videos/
+data/dataset_processed/
+
+# ==========================
+# 4. Models & Training Output
+# ==========================
+# PyTorch Checkpoints (Training backups - usually very large)
+*.pth
+models/*.pth
+
+# ONNX Models (Production models)
+# Uncomment the line below if you WANT to commit the model to Git
+# (Only commit if < 100MB)
+# models/*.onnx
+
+# Training Logs
+*.log
+models/training_history.json
+
+# ==========================
+# 5. Web & Node.js
+# ==========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==========================
+# 6. Exceptions (Keep these)
+# ==========================
+# Always keep label configs and package managers
+!package.json
+!package-lock.json
+!models/model_meta.json

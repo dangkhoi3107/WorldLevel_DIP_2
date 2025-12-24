@@ -5,7 +5,7 @@
     <title>Hand Sign Recognition</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-  </head>
+    </head>
   <body>
     <main id="app">
       <div id="video-container">
@@ -31,7 +31,40 @@
 
         <div id="error-overlay" hidden></div>
       </div>
-    </main>
+
+      <div class="sample-section">
+        <h3>Try mimicking these gestures:</h3>
+
+        <div class="sample-grid">
+          <div class="sample-item">
+            <div class="video-wrapper">
+              <video src="./assets/03003.mp4"
+                     autoplay loop muted playsinline>
+              </video>
+            </div>
+            <p class="sample-label">Apple</p>
+          </div>
+
+          <div class="sample-item">
+            <div class="video-wrapper">
+              <video src="./assets/64280.mp4"
+                     autoplay loop muted playsinline>
+              </video>
+            </div>
+            <p class="sample-label">Yes</p>
+          </div>
+
+          <div class="sample-item">
+            <div class="video-wrapper">
+              <video src="./assets/69402.mp4"
+                     autoplay loop muted playsinline>
+              </video>
+            </div>
+            <p class="sample-label">Mother</p>
+          </div>
+        </div>
+      </div>
+      </main>
 
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>

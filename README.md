@@ -21,7 +21,7 @@ This project implements a real-time Hand Gesture Recognition system capable of i
 ## 📂 Project Structure
 
 ```text
-AR-DRAWING/
+ROOT/
 ├── data/                      # Raw videos and processed Numpy arrays
 ├── models/                    # Trained models (.pth, .onnx) and training history
 ├── src_training/              # Python source code for training
@@ -96,15 +96,7 @@ To run the recognition system locally:
 1. **Update Model:** Copy the generated `sign_model.onnx` and `model_meta.json` from the `models/` folder and paste them into the `web_app/` folder.
 2. **Launch Server:**
 * **Using VS Code:** Right-click `web_app/index.html` and select **"Open with Live Server"**.
-* **Using Python:**
-```bash
-cd web_app
-python -m http.server 8000
 
-```
-
-
-Then navigate to `http://localhost:8000`.
 
 
 

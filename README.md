@@ -72,7 +72,7 @@ If you want to train on your own gestures:
 Convert raw landmarks/videos into standardized sequences (fixed 30 frames):
 
 ```bash
-python src_training/process_videos_pytorch.py
+python  src_training/process_videos_pytorch.py --video_dir  "data/videos" --out_dir "data/dataset_processed"
 
 ```
 

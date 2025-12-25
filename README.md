@@ -106,9 +106,9 @@ Evaluated on the WLASL subset (Test Set):
 
 | Metric | Score | Description |
 | --- | --- | --- |
-| **Accuracy** | **90.28%** | Overall classification accuracy |
-| **Precision** | **89.5%** | Positive predictive value |
-| **F1-Score** | **88.8%** | Harmonic mean of Precision and Recall |
+| **Accuracy** | **81.0%** | Overall classification accuracy |
+| **Precision** | **84.0%** | Positive predictive value |
+| **F1-Score** | **80.0%** | Harmonic mean of Precision and Recall |
 
 *Detailed analysis and charts are available in the final project report.*
 
